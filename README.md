@@ -1,4 +1,34 @@
 # e-commerce-backend
+
+## Purpose
+
+To build the back end of an e-commerce website. So that the company can compete with other e-commerce companies. 
+
+## Description
+
+I created the back end of an app using node, dotenv, mysql2, sequelize, and express.
+
+
+
+## Built with
+* Node
+* dotenv
+* mysql2
+* sequelize
+* express
+
+
+
+
+## Video Link
+
+
+## contribution
+Made with ❤️ by Eric Schweitzer
+
+&copy; Schweitzer enterprises 2022
+
+
 AS A manager at an internet retail company
 I WANT a back end for my e-commerce website that uses the latest technologies
 SO THAT my company can compete with other e-commerce companies

@@ -22,15 +22,14 @@ router.get('/:id', (req, res) => {
     },
     attributes: [
       'id',
-      'post_url',
-      'title',
-      'created_at',
+      'category_name',
+
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],
     include: [
       {
         model: Comment,
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+        attributes: ['id', 'category_name', ],
         include: {
           model: User,
           attributes: ['username']
@@ -59,9 +58,8 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   // create a new category
   Category.create({
-    comment_text: req.body.comment_text,
-    user_id: req.body.user_id,
-    post_id: req.body.post_id
+    category_name: req.body.category_name,
+
   })
     .then(CategoryData => res.json(CategoryData))
     .catch(err => {
@@ -74,7 +72,7 @@ router.put('/:id', (req, res) => {
   // update a category by its `id` value
   Category.update(
     {
-      title: req.body.title
+      category_name: req.body.title
     },
     {
       where: {
