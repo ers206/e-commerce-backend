@@ -29,7 +29,7 @@ Made with ❤️ by Eric Schweitzer
 &copy; Schweitzer enterprises 2022
 
 
-AS A manager at an internet retail company
+<!-- AS A manager at an internet retail company
 I WANT a back end for my e-commerce website that uses the latest technologies
 SO THAT my company can compete with other e-commerce companies
 
@@ -61,4 +61,4 @@ Category has many Product models.
 
 Product belongs to many Tag models. Using the ProductTag through model, allow products to have multiple tags and tags to have many products.
 
-Tag belongs to many Product models.
+Tag belongs to many Product models. -->
