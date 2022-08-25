@@ -30,19 +30,6 @@ Category.init(
 module.exports = Category;
 
 
-// Your database should contain the following four models, including the requirements listed for each model:
-
-// Category
-
-// id
-// Integer
-// Doesn't allow null values
-// Set as primary key
-// Uses auto increment
-
-// category_name
-// String
-// Doesn't allow null values
 
 
 
